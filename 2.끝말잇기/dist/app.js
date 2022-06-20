@@ -15,7 +15,7 @@
   \************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar Component = React.Component;\n\nfunction WordReplay() {}\n\nmodule.exports = WordReplay;\n\n//# sourceURL=webpack://package/./WordReplay.jsx?");
+eval("var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar Component = React.Component;\n\nfunction WordReplay(props) {\n  return /*#__PURE__*/React.createElement(\"div\", null, /*#__PURE__*/React.createElement(\"h1\", null, \"hello\"));\n}\n\nmodule.exports = WordReplay;\n\n//# sourceURL=webpack://package/./WordReplay.jsx?");
 
 /***/ }),
 
