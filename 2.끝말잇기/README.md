@@ -3,7 +3,7 @@
 
 
 ### day 2 (6/22)
-여기 아래까지 하다가 터미널에서 웹팩 Failed to load 에러, 브라우저에서는 no longer supported 에러가 많이 나와서 결국 create-react-app으로 만들려고 한다...
+여기 아래까지 하다가 터미널에서 웹팩 Failed to load 에러, 브라우저에서는 no longer supported 에러가 많이 나와서 결국 create-react-app으로 구현해보려 한다...
 
 
 ### webpack.config.js
