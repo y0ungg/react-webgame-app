@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react'
 
 function App() {
@@ -9,13 +10,15 @@ function App() {
     e.preventDefault();
     //word의 마지막 글자와 value의 첫 글자가 같으면 result = '정답'
     //value = word가 된다.
-    if(e.value === word){
-      setValue(e.value);
-      setResult('통과');
+    if(value.slice(0,1) === word.slice(-1)){
       setWord(value);
+      setResult('통과');
+      setValue('');
+      // setWord(value);
     }
-    if(e.value !== word){
+    else{
       setResult('다시 입력하세요');
+      setValue('')
     }
   }
 
@@ -23,7 +26,7 @@ function App() {
     <div className="App">
       <h1>{word}</h1>
       <form onSubmit={handleSubmit}>
-        <input type='text' name='name' onChange={(e) => { setValue(e.target.value) }} />
+        <input type='text' name='name' onChange={(e) => { setValue(e.target.value) }} value={value} />
         <input type="submit" />
       </form>
       <div>

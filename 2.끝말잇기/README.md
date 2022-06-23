@@ -1,6 +1,15 @@
 # 2. 끝말잇기  
+### day 3 (6/23)
+npm run start를 하면 화면은 잘 나오는데  
+`Uncaught SyntaxError: Unexpected token '<' (at index.js:1:1)`  
+라는 에러가 발생했다.  
 
-
+구글링 끝에 html파일에서 script를 include할 때 문제가 발생했다는 걸 알았고  
+ script 태그에 `type="text/babel"` 속성을 추가해주니 해결됐다.
+  
+    
+input태그의 value 속성을 state {value}로 지정해주는 게 포인트였다!!  
+`<input type='text' name='name' onChange={(e) => { setValue(e.target.value) }} value={value} />`
 
 ### day 2 (6/22)
 여기 아래까지 하다가 터미널에서 웹팩 Failed to load 에러, 브라우저에서는 no longer supported 에러가 많이 나와서 결국 create-react-app으로 구현해보려 한다...
