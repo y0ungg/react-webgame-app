@@ -1,0 +1,35 @@
+.numbers {
+  margin: 10px;
+}
+
+button {
+  margin: 20px 10px 10px 10px;
+  font-size: 15px;
+}
+
+.ball {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+}
+
+.red {
+  background: red;
+}
+
+.orange {
+  background: orange;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
