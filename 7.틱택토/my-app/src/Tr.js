@@ -1,10 +1,10 @@
 import Td from './Td';
 
-const Tr = ({ rowData }) => {
+const Tr = ({ rowdIndex, rowData, dispatch }) => {
 
   return (
     <Tr>
-      {Array(rowData.length).fill().map((td) => (<Td>{''}</Td>))}
+      {Array(rowData.length).fill().map((td, i) => (<Td dispatch={dispatch} rowdIndex={rowdIndex} cellIndex={i} cellData={rowData[i]}>{''}</Td>))}
     </Tr>
   );
 }

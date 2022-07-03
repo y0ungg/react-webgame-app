@@ -20,4 +20,5 @@ const [state, dispatch] = useState(reducer, initialState);
   
 state를 변경하려면 action을 dispatch(실행)해야 하고, action을 어떻게 구현하는지는 reducer이 관리한다.
   
-- styled-components를 적용해봤다.  
+- spread 문법 = 얕은 복사  
+React 불변성을 지킬 수 있다.
