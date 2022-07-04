@@ -1,11 +1,13 @@
 import Tr from "./Tr";
 
-const Table = ({ onClick, tableData, dispatch }) => {
+const Table = ({ tableData, dispatch }) => {
     return (
-        <Table onClick={onClick}>
-            {Array(tableData.length).fill().map((tr, i) => (<Tr dispatch={dispatch} rowIndex={i} rowData={tableData[i]} />))}
+        <Table>
+            {Array(tableData.length).fill().map((tr, i) => (
+              <Tr key={i} dispatch={dispatch} rowIndex={i} rowData={tableData[i]} />
+            ))}
         </Table>
-    )
+      );
 }
 
 export default Table;
